@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" styleClass="bodybg" stylesheets="@theDrake.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thedrake.ui.MenuController">
+   <children>
+      <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="800.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="The Drake" wrappingWidth="400.0">
+               <font>
+                  <Font name="Old English Text MT" size="80.0" />
+               </font>
+            </Text>
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </HBox>
+      <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="800.0" spacing="50.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="-8.0" AnchorPane.rightAnchor="8.0">
+         <children>
+            <Button fx:id="localMPBtn" mnemonicParsing="false" onAction="#startGameAction" onMouseEntered="#localMPOn" onMouseExited="#localMPOff" text="Local Multiplayer">
+               <font>
+                  <Font name="Old English Text MT" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="localSPBtn" mnemonicParsing="false" onMouseEntered="#mouseEnteredHighlight" onMouseExited="#mouseExitedHighlight" styleClass="notImplemented" text="Local Singleplayer">
+               <font>
+                  <Font name="Old English Text MT" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="onlineMPBtn" mnemonicParsing="false" onMouseEntered="#onlineMPOn" onMouseExited="#onlineMPOff" styleClass="notImplemented" text="Online Multiplayer">
+               <font>
+                  <Font name="Old English Text MT" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="exitBtn" mnemonicParsing="false" onAction="#exitAction" onMouseEntered="#exitOn" onMouseExited="#exitOff" text="Exit">
+               <font>
+                  <Font name="Old English Text MT" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>

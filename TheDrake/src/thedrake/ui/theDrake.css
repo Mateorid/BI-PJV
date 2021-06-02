@@ -1,0 +1,28 @@
+Text {
+    -fx-fill: linear-gradient(from 0% 0% to 5% 5%, reflect, saddlebrown, darkgoldenrod);
+}
+
+Button {
+    -fx-background-color: none;
+    -fx-text-fill: linear-gradient(from 0% 0% to 5% 5%, reflect, saddlebrown, darkgoldenrod);
+}
+
+.bodybg {
+    -fx-background-image: url("resources/background.gif");
+    -fx-background-size: 100% 100%;
+}
+
+.notImplemented{
+    -fx-opacity: 50%;
+}
+
+.title {
+    -fx-font-size: 80;
+    -fx-wrap-text: true;
+    /*-fx-border-color: linear-gradient(from 0% 0% to 20% 20%, reflect, darkred,darkgoldenrod);*/
+    /*-fx-text-fill: linear-gradient(from 0% 0% to 20% 20%, reflect, darkred,darkgoldenrod);*/
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+    -fx-max-width: Infinity;
+    -fx-padding: 5;
+}
